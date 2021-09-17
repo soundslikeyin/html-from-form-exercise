@@ -9,10 +9,10 @@
 <body>
     <main>
         <h1>Travel reservation form</h1>
-        <h3>* denotes mandatory</h3>
+        <h2>* denotes mandatory</h2>
 
-        <form method="PUSH" action="">
-            <label for="name">
+        <form method="POST" action="">
+            <label>
                 Full name*:
                 <br>
                 <input type="text" id="name" name="name" minlength="1" size="20" placeholder="FirstName LastName"
@@ -21,17 +21,17 @@
             </label>
             <br>
 
-            <label for="email">
+            <label>
                 Email address*:
                 <br>
                 <input type="email" id="email" name="email" size="20" placeholder="EMAIL_ADDRESS" required>
             </label>
             <br>
 
-            <label for="tourPackage">
+            <label>
                 Select Tour Package* :
                 <br>
-                <select name="tourPackage" required>
+                <select id="tourPackage" name="tourPackage" required>
                     <option value="goa" selected>Goa</option>
                     <option value="mumbai">Mumbai</option>
                     <option value="delhi">Delhi</option>
@@ -39,24 +39,22 @@
             </label>
             <br>
 
-            <label for="arrivalDate">
+            <label>
                 Arrival date*:
                 <br>
-                <input type="arrivalDate" id="arrivalDate" name="arrivalDate" placeholder="m/d/y" min="9/17/2021"
-                    required>
+                <input type="date" id="arrivalDate" name="arrivalDate" placeholder="m/d/y" min="9/17/2021" required>
 
             </label>
             <br>
 
-            <label for="numberPerson">
+            <label>
                 Number of persons*:
                 <br>
-                <input type="number" id="numberPerson" name="numberPerson" placeholder="UNKNOWN_TYPE" min="1" step="1"
-                    required>
+                <input type="number" id="numberPerson" name="numberPerson" placeholder="UNKNOWN_TYPE" min="1" step="1" required>
             </label>
             <br>
 
-            <label for="checkAvail">
+            <label>
                 What would you want to avail?*
                 <br>
                 <label for="boarding">Boarding</label>
@@ -70,10 +68,10 @@
             </label>
             <br>
 
-            <label for="discountCode">
+            <label>
                 Discount Coupon code:
                 <br>
-                <input type="TEXT" id="discountCode" name="discountCode" placeholder="UNKNOWN_TYPE">
+                <input type="text" id="discountCode" name="discountCode" placeholder="UNKNOWN_TYPE">
             </label>
             <br>
 
